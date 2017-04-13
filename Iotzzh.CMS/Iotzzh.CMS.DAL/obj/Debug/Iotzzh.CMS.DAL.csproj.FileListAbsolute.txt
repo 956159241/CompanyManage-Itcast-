@@ -1,0 +1,14 @@
+E:\练习代码\ITcast\企业管理项目开发\Iotzzh.CMS\Iotzzh.CMS.DAL\bin\Debug\Iotzzh.CMS.DAL.dll
+E:\练习代码\ITcast\企业管理项目开发\Iotzzh.CMS\Iotzzh.CMS.DAL\bin\Debug\Iotzzh.CMS.DAL.pdb
+E:\练习代码\ITcast\企业管理项目开发\Iotzzh.CMS\Iotzzh.CMS.DAL\obj\Debug\Iotzzh.CMS.DAL.dll
+E:\练习代码\ITcast\企业管理项目开发\Iotzzh.CMS\Iotzzh.CMS.DAL\obj\Debug\Iotzzh.CMS.DAL.pdb
+E:\练习代码\ITcast\企业管理项目开发\Iotzzh.CMS\Iotzzh.CMS.DAL\bin\Debug\Iotzzh.CMS.Model.dll
+E:\练习代码\ITcast\企业管理项目开发\Iotzzh.CMS\Iotzzh.CMS.DAL\bin\Debug\Iotzzh.CMS.Model.pdb
+E:\练习代码\ITcast\企业管理项目开发\Iotzzh.CMS\Iotzzh.CMS.DAL\obj\Debug\Iotzzh.CMS.DAL.csprojResolveAssemblyReference.cache
+E:\练习代码\ITcast\企业管理项目开发\CompanyManageFromItcast\Iotzzh.CMS\Iotzzh.CMS.DAL\bin\Debug\Iotzzh.CMS.DAL.dll
+E:\练习代码\ITcast\企业管理项目开发\CompanyManageFromItcast\Iotzzh.CMS\Iotzzh.CMS.DAL\bin\Debug\Iotzzh.CMS.DAL.pdb
+E:\练习代码\ITcast\企业管理项目开发\CompanyManageFromItcast\Iotzzh.CMS\Iotzzh.CMS.DAL\bin\Debug\Iotzzh.CMS.Model.dll
+E:\练习代码\ITcast\企业管理项目开发\CompanyManageFromItcast\Iotzzh.CMS\Iotzzh.CMS.DAL\bin\Debug\Iotzzh.CMS.Model.pdb
+E:\练习代码\ITcast\企业管理项目开发\CompanyManageFromItcast\Iotzzh.CMS\Iotzzh.CMS.DAL\obj\Debug\Iotzzh.CMS.DAL.csprojResolveAssemblyReference.cache
+E:\练习代码\ITcast\企业管理项目开发\CompanyManageFromItcast\Iotzzh.CMS\Iotzzh.CMS.DAL\obj\Debug\Iotzzh.CMS.DAL.dll
+E:\练习代码\ITcast\企业管理项目开发\CompanyManageFromItcast\Iotzzh.CMS\Iotzzh.CMS.DAL\obj\Debug\Iotzzh.CMS.DAL.pdb
