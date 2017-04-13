@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+      <link href="~/Content/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/themes/icon.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.easyui.min.js"></script>
+    <script src="~/Scripts/easyui-lang-zh_CN.js"></script>
+</head>
+<body class="easyui-layout">
+    <!------------------顶部的top栏---------------->
+	<div region="north" border="false" style="height:80px;background:url('../../Content/Images/bg.jpg');overflow:hidden;
+	    background-repeat:repeat-x;">
+        <h1 style="text-align:center;color:Green;">页面的顶部指示信息</h1>
+    </div>
+    <!------------------顶部的top栏结束---------------->
+    <!------------------content左侧---------------->
+	<div region="west" split="true" title="West" style="width:150px;padding:2px;">
+    <div class="easyui-accordion" style="width:auto;height:auto;">
+		<div title="新闻管理" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+			<a href="javascript:void(0)">新闻管理</a>
+		</div>
+		<div title="评论管理" data-options="iconCls:'icon-help'" style="padding:10px;">
+			<a href="javascript:void(0)">品论管理</a>	
+		</div>
+    </div>
+    
+    
+    </div>
+	<!------------------content左侧结束---------------->
+    <!------------------底部---------------->
+    <div region="south" border="false" style="height:50px;background:#A9FACD;padding:10px;">底部</div>
+	<!------------------底部结束---------------->
+    <!------------------右侧---------------->
+    <div region="center" title="Main Title">
+	</div>
+    <!------------------右侧结束---------------->
+</body>
+</html>
