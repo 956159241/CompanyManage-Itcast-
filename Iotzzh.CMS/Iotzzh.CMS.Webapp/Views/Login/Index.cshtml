@@ -23,8 +23,8 @@
         function afterLogin(data) {
             var serverData = data.split(':');
             if (serverData[0] == "ok") {
-                //window.location.href = "/Home/Index";
-                window.location.href = "http://www.iotzzh.com";//用于测试
+                window.location.href = "/Home/Index";
+                //window.location.href = "http://www.iotzzh.com";//用于测试
             } else if (serverData[0] == "no") {
                 $("#errorMsg").text(serverData[1]);
                 changeCheckCode();//登录失败后，再给验证码刷新一下
@@ -196,7 +196,7 @@
                                     密码：
                                 </td>
                                 <td align="left">
-                                    <input type="password" name="LoginPwd" id="LoginPwd" value="123" class="login-text" />
+                                    <input type="password" name="LoginPwd" id="LoginPwd" class="login-text" />
                                 </td>
                             </tr>
                             <tr>
@@ -204,7 +204,7 @@
                                     验证码：
                                 </td>
                                 <td align="left">
-                                    <input type="text" class="login-text" id="code" name="vCode" value="1" />
+                                    <input type="text" class="login-text" id="code" name="vCode" value="请输入验证码" />
                                 </td>
                             </tr>
                             <tr>

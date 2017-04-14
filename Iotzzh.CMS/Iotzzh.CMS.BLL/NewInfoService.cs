@@ -34,5 +34,20 @@ namespace Iotzzh.CMS.BLL
             int pageCount = Convert.ToInt32(Math.Ceiling((double)recordCount/pageSize));
             return pageCount;
         }
-    }
+        /// <summary>
+        /// 通过web层传来的id，通过使用dal层的方法，返回结果
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public NewInfo GetModel(int id)
+        {
+            return NewInfoDal.GetModel(id);
+        }
+
+        public bool DeleteInfo(int id)
+        {
+            return NewInfoDal.DeleteInfo(id) > 0;      
+        }
+
+      }
 }

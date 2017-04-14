@@ -66,5 +66,36 @@ namespace Iotzzh.CMS.DAL
             string sql = "select count(*) from News";
             return Convert.ToInt32(SqlHelper.ExecuteScalare(sql,CommandType.Text));
         }
+        /// <summary>
+        /// 获取一条记录
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public NewInfo GetModel(int id)
+        {
+            string sql = "select * from News where id = @id";
+            SqlParameter[] pars = { 
+                                    new SqlParameter("@id",SqlDbType.Int)
+                                  };
+            pars[0].Value = id;
+            DataTable da = SqlHelper.GetTable(sql,CommandType.Text,pars);
+            NewInfo newInfo = null;
+            if (da.Rows.Count > 0)
+            {
+                newInfo = new NewInfo();
+                LoadEntity(da.Rows[0], newInfo);
+            }
+            return newInfo;
+        }
+        /// <summary>
+        /// 删除一条记录
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public int DeleteInfo(int id)
+        {
+            string sql = "delete from News where id = @id";
+            return SqlHelper.ExecuteNonquery(sql,CommandType.Text,new SqlParameter("@id",id));
+        }
     }
 }

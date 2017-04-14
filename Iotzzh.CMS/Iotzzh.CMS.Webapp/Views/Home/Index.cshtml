@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -8,11 +8,40 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width" />
     <title>Home</title>
-      <link href="~/Content/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/themes/default/easyui.css" rel="stylesheet" />
     <link href="~/Content/themes/icon.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-1.7.1.min.js"></script>
     <script src="~/Scripts/jquery.easyui.min.js"></script>
     <script src="~/Scripts/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            binClickEvent();
+        });
+        function binClickEvent() {
+            //绑定超链接的单击事件
+            $(".detailLink123").click(function () {
+                var title = $(this).text();
+                var url = $(this).attr("url");
+                var isExt = $('#tt').tabs('exists', title);//判断页签是否存在
+                if (isExt) {
+                    $('#tt').tabs('select', title);
+                    return;
+                }
+
+                $('#tt').tabs('add', {
+                    title: title,
+                    content: showContent(url),
+                    closable: true
+                });
+            });
+        }
+        //页签中显示的内容
+        function showContent(url) {
+            var strHtml = '<iframe src="' + url + '" scrolling="no" width="100%" height="100%" frameborder="0"></iframe>';
+            return strHtml;
+        }
+        
+    </script>
 </head>
 <body class="easyui-layout">
     <!------------------顶部的top栏---------------->
@@ -25,10 +54,10 @@
 	<div region="west" split="true" title="West" style="width:150px;padding:2px;">
     <div class="easyui-accordion" style="width:auto;height:auto;">
 		<div title="新闻管理" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
-			<a href="javascript:void(0)">新闻管理</a>
+			<a href="javascript:void(0)" class="detailLink123" url="/AdminNewList/Index">新闻管理</a>
 		</div>
 		<div title="评论管理" data-options="iconCls:'icon-help'" style="padding:10px;">
-			<a href="javascript:void(0)">品论管理</a>	
+			<a href="javascript:void(0)" class="detailLink123" url="/Comment/Index">品论管理</a>	
 		</div>
     </div>
     
@@ -40,7 +69,13 @@
 	<!------------------底部结束---------------->
     <!------------------右侧---------------->
     <div region="center" title="Main Title">
+        
+        <div class="easyui-tabs" style="width:700px;height:250px" fit="true" id="tt">
+		    <div title="新闻管理" style="padding:10px">
+                <iframe src="/AdminNewList/Index" scrolling="no" width="100%" height="100%" frameborder="0"></iframe>
+		    </div>
 	</div>
     <!------------------右侧结束---------------->
+
 </body>
 </html>
